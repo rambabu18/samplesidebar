@@ -1,38 +1,227 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Nav Css */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #060b26;
+  height: 80px;
   display: flex;
-  flex-direction: column;
+  justify-content: start;
   align-items: center;
+}
+
+.menu-bars_one {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.menu_logo{
+  margin-top: 20px;
+  margin-right: 20px;
+  height: max-content;
+  width: 100%;
+}
+
+.menu-bars {
+  margin-left: 0rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.menu_bar_title{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-menu {
+  background-color: #060b26;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #1a83ff;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #060b26;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+/* Sidebar Items */
+
+.sidebar-item{
+  padding: .75em 1em;
+  display: block;
+  transition: background-color .15s;
+  border-radius: 5px;
+}
+.sidebar-item:hover{
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebar-title{
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  color: #fff;
+}
+.sidebar-title span i{
+  display: inline-block;
+  width: 1.5em;
+}
+.sidebar-title .toggle-btn{
+  cursor: pointer;
+  transition: transform .3s;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn{
+  transform: rotate(180deg);
+}
+.sidebar-content{
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+}
+.sidebar-item.open > .sidebar-content{
+  height: auto;
+}
+
+.sidebar-item.plain{
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar-item.plain:hover{
+  text-decoration: underline;
+}
+.sidebar-item.plain i{
+  display: inline-block;
+  width: 1.7em;
+}
+
+/* Multi Select */
+.checkbox_form{
+  background-color: #060b26;
+  width: 220px;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.checkbox_btn{
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px ;
+  font-weight: 600;
+  background-color: #060b26;
+  color: #fff;
+  border: none;
+}
+
+.checkbox_form label{
+  color: #fff;
+}
+.checkbox_form input{
+  margin-left: 20px;
+}
+
+
+.arrow-down{
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+
+.arrow-up{
+  transform: rotate(180deg);
+  transition: transform 1s linear;
+}
+
+.menu_bar_row{
+  margin-top: 30px !important;
+}
+.checkbox_form_one{
+  background-color: #060b26;
+  width: 180px;
+  padding: 0px;
+  border: 1px solid #333;
+}
+
+.checkbox_form_one input{
+  margin-left: 40px;
+}
+
+input[type="checkbox"] {
+  accent-color: #0acf10;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.checkbox_btn_one{
+  width: 240px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px ;
+  font-weight: 600;
+  background-color: #060b26;
+  color: #fff;
+  border: none;
 }

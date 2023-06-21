@@ -1,0 +1,110 @@
+[
+    {
+        "title": "Point of Interest",
+        "icon": "bi-gear-fill",
+        "childrens": [
+            {
+                "title": "Districts",
+                "icon": "bi-house-fill",
+                "path": "/"
+            },
+            {
+                "title": "Schools",
+                "icon": "bi-info-circle-fill",
+                "path": "/about"
+            },
+            {
+                "title": "Capex Projects",
+                "icon": "bi-phone-fill",
+                "childrens": [
+                    {
+                        "title": "Facebook",
+                        "icon": "bi-facebook"
+                    },
+                    {
+                        "title": "Twitter",
+                        "icon": "bi-twitter"
+                    },
+                    {
+                        "title": "Instagram",
+                        "icon": "bi-instagram"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Challenges",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            {
+                "challangetitle": "2022",
+                 "key": 2,
+                "challangeData": [
+                    {
+                        "title": "Highways",
+                        "path": "/high"
+                    },
+                    {
+                        "title": "Junctions",
+                        "path": "/jun"
+                    }
+                ]
+            },
+            {
+                "challangetitle": "2025",
+                "key": 2,
+                "challangeData": [
+                    {
+                        "title": "Highways",
+                        "path": "/high"
+                    },
+                    {
+                        "title": "Junctions",
+                        "path": "/jun"
+                    }
+                ]
+            }
+           
+        ]
+    },
+    {
+        "title": "Plans",
+        "icon": "bi-person-fill",
+        "childrens": [
+            {
+                "title": "Plan A",
+                "path": "/plan"
+            },
+            {
+                "title": "Plan B",
+                "childrens": [
+                    {
+                        "title": "Account",
+                        "path": "/settings/account"
+                    },
+                    {
+                        "title": "Billing",
+                        "childrens": [
+                            {
+                                "title": "Payment",
+                                "path": "/settings/billing/payment"
+                            },
+                            {
+                                "title": "Subscription",
+                                "path": "/settings/billing/subscription"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Notifications",
+                        "path": "/settings/notifications"
+                    }
+                ]
+            }
+           
+        ]
+    }
+   
+   
+]
